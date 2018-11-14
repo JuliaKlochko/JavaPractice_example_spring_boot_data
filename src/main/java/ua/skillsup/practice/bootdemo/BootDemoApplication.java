@@ -13,5 +13,6 @@ public class BootDemoApplication {
 
 		StudentRepository repository = context.getBean(StudentRepository.class);
 		System.out.println(repository.findAll());
+		System.out.println(repository.findByName("Rang"));
 	}
 }
